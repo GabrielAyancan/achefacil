@@ -1,6 +1,6 @@
 import { Header } from "@/sections/Header";
 
- const Page = () => {
+ const Ouroffer = () => {
     return (
         <section>
             <div></div>
@@ -8,4 +8,4 @@ import { Header } from "@/sections/Header";
     );
 };
 
-export default Page
+export default Ouroffer
