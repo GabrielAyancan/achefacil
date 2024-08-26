@@ -9,6 +9,9 @@ import { Contact } from "@/sections/Contact";
 import { Footer } from "@/sections/Footer";
 import { useRouter } from 'next/router';
 
+
+
+
 export default function Home() {
   return (
     <>

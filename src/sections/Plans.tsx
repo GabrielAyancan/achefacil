@@ -65,14 +65,14 @@ export const Plans = () => {
                             <div className="inline-flex text-sm py-1.5 ">
                             </div>
                         </div>
-                        <span className="text-5xl font-bold tracking-wide leading-none -mt-16">{mb} Mb</span>
+                        <span className="text-5xl font-bold tracking-wide leading-none mt-12">{mb} Mb</span>
                         <div className="flex items-baseline mt-[240px]">
                         </div>
 
 
                         <ul className="flex flex-col p-2 -mt-52">
                             {features.map((feature, key) => (
-                                <li key={key} className="text-sm flex items-center gap-6">
+                                <li key={key} className="text-base flex items-center gap-6 text-blue-700">
                                     <span>{feature}</span></li>
                             ))}
                         </ul>
@@ -97,10 +97,18 @@ export const Plans = () => {
                         
                         <Image src={Phone2Icon} alt="PhoneIcon" height={100} width={100} className="flex flex-auto -right-[-550px] md:absolute mt-16" />
                     </span>
-            </div>
+            </div>  
+                <div>
+                        <div className="container">
+                        <h1 className="text-gray-900 text-2xl px-[130px] mt-36 font-seriff">Internet</h1>
+                        </div>
 
+                        <h2 className="text-gray-900">TV</h2>
+
+                        <h3 className="text-gray-900">Phone</h3>
+                </div>
         
-            <div className=" text-center">
+            <div className="text-center">
             <button className=" bg-blue-800 mt-60 px-12 py-3 rounded-full">
                 <span className="text-[#B5E6FF]">Contact us</span>
             </button>

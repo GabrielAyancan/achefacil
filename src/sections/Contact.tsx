@@ -7,6 +7,12 @@ import LinkedinIcon from '@/assets/icons/linkedin.png';
 export const Contact = () => {
     return (
         <section className="container -mt-[-600px]">
+            <div className="absolute mt-12">
+                <h1>Gabriel</h1>
+                <h2>Level 999</h2>
+                <h3>Rua Remo Tagliassachi</h3>
+                <h4>Jardim das Flores</h4>
+            </div>
         <div className="">
             <h1 className="text-gray-900 text-center text-2xl font-bold">Contact with us</h1>
             <p className="text-center text-blue-600 text-3xl font-bold mt-6">+55 11 97287-6871</p>

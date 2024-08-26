@@ -11,7 +11,7 @@ export const Hero = () => {
     <section>
       <div className="container">
         <div className="h-full overflow-x-clip">
-        <Image src={Background} alt="Background" height={1000} width={985} className="-right-[-130px] md:absolute md:block" />
+        <Image src={Background} alt="Background" height={1000} width={985} className="-right-[-130px] md:absolute md:block " />
         <Image src={PhoneIcon} alt="PhoneIcon" height={100} width={130} className="flex flex-auto -right-[-830px] md:absolute mt-40" />
         <Image src={YoutubeIcon} alt="YoutubeIcon" height={100} width={100} className="flex flex-auto -right-[-350px] md:absolute mt-64" />
         <Image src={TempoIcon} alt="TempoIcon" height={100} width={100} className="flex flex-auto -right-[-150px] md:absolute mt-14" />
