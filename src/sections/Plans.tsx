@@ -32,6 +32,9 @@ const pricingTiers = [
             "Vivamus in diam turpis. In condimentum maximus porttitor purus, tristique.",
             "Fusce lobortis porttitor",
         ],
+        teste: [
+            "Fusce lobortis porttitor"
+        ],
     },
     {
         title: "Fiber Max",
@@ -43,6 +46,9 @@ const pricingTiers = [
         features: [
             "Nunc id tellus finibus, eleifend mi vel, maximus tortor, pellentesque justo.",
             "Fusce lobortis porttitor",
+        ],
+        teste: [
+            "Fusce lobortis porttitor"
         ],
     },
 ];
@@ -57,7 +63,8 @@ export const Plans = () => {
 
             <div className="flex flex-col gap-16 items-center mt-10 lg:flex-row  lg:justify-center">
                 {pricingTiers.map(({ title, mb, popular, inverse, features, teste,  monthlyPrice, buttonText }, key) => (
-                    <div key={key} className={twMerge("card", 'bg-white text-gray-900')}>
+                    <div key={key} className={twMerge("card card1", 'bg-white text-gray-900')}>
+
 
                         {/* TITULO E MB */}
                         <div className="flex justify-between">
@@ -65,8 +72,10 @@ export const Plans = () => {
                             <div className="inline-flex text-sm py-1.5 ">
                             </div>
                         </div>
-                        <span className="text-5xl font-bold tracking-wide leading-none mt-12">{mb} Mb</span>
+                        <div className="mt-6">
+                        <span className="text-5xl font-bold tracking-wide mt-12 py-9">{mb} Mb</span>
                         <div className="flex items-baseline mt-[240px]">
+                            </div>
                         </div>
 
 
@@ -76,10 +85,19 @@ export const Plans = () => {
                                     <span>{feature}</span></li>
                             ))}
                         </ul>
-                        
-                        <span className="text-4xl font-bold tracking-tighter leading-none gap-8">${monthlyPrice}</span>
+
+                        <ul className="">
+                            {teste.map((teste, key) => (
+                                <li key={key} className="text-base flex items-center mt-2 p-2">
+                                    <span>{teste}</span>
+                                </li>
+                            ))}
+                        </ul>
+                        <div className="mt-8">
+                        <span className="text-4xl font-bold tracking-tighter py-2">${monthlyPrice}</span>
                         <span className="text-4xl tracking-tight font-bold text-gray-900">/month</span>
-                        <button className="w-full mt-[30px] text-blue-900">{buttonText}</button>
+                        </div>
+                        <button className="w-full mt-[50px] text-[#1127FF]">{buttonText}</button>
                     </div>
                 ))}
             </div>
@@ -100,16 +118,16 @@ export const Plans = () => {
             </div>  
                 <div>
                         <div className="container">
-                        <h1 className="text-gray-900 text-2xl px-[130px] mt-36 font-seriff">Internet</h1>
+                        <h1 className="text-gray-900 text-2xl px-[130px] mt-36">Internet</h1>
                         </div>
+                        
+                        <h2 className="text-gray-900 text-2xl -mt-8 px-[930px]">TV</h2>
 
-                        <h2 className="text-gray-900">TV</h2>
-
-                        <h3 className="text-gray-900">Phone</h3>
+                        <h3 className="text-gray-900 text-2xl -mt-8 px-[1280px]">Phone</h3>
                 </div>
         
             <div className="text-center">
-            <button className=" bg-blue-800 mt-60 px-12 py-3 rounded-full">
+            <button className=" bg-blue-800 mt-20 px-12 py-3 rounded-full">
                 <span className="text-[#B5E6FF]">Contact us</span>
             </button>
         </div>

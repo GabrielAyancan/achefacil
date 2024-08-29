@@ -32,9 +32,7 @@ export const Pricing = () => {
                 <h2 className="text-[#B5E6FF] p-10 text-5xl font-bold px-2">250 Mb</h2>
                 <p className="text-white -mt-4 text-xl">Nulla mauris dolor, gravida <br />a varius blandit.</p>
                 <div className="-left-[-270px] md:absolute -mt-[170px]">
-                    <h3 className=" text-[#B5E6FF] py-11 text-5xl font-bold">
-                     Mb
-                        </h3>
+                    <h3 className=" text-[#B5E6FF] py-11 text-5xl font-bold">500 Mb</h3>
                     <p className="text-white -mt-6 text-xl">Phasellus scele risque sapien amet.</p>
                 </div>
             </div>

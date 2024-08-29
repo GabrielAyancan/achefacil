@@ -5,7 +5,7 @@ import { Plans } from "@/sections/Plans";
 import { Package } from "@/sections/Package";
 import { Testimonials } from '@/sections/Testimonials';
 import { Questions } from "@/sections/Questions";
-import { Contact } from "@/sections/Contact";
+import { Contact } from "@/sections/Contact2";
 import { Footer } from "@/sections/Footer";
 import { useRouter } from 'next/router';
 

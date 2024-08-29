@@ -9,15 +9,15 @@ import AutenticacaoIcon from '@/assets/icons/autenticacao.png';
 import NuvemIcon from '@/assets/icons/nuvem.png';
 import PhoneIcon from '@/assets/icons/telephone.png';
 import DigitalIcon from '@/assets/icons/digital.png';
-import { Contact } from "./Contact";
+import { Contact } from "./Contact2";
 import { Footer } from "./Footer";
 
 
 export const Features = () => {
     return (
             <div>
-            <div className="container p-2 items-center ">
-                <Image src={BgImage} alt="Background" height={1000} width={1000} className="md:absolute md:block" />
+            <div className="container p-2 items-center">
+                <Image src={BgImage} alt="Background" height={1000} width={1000} className="md:absolute md:block " />
             </div>
             <div className="flex-auto p-[400px]">
             <Plans />
