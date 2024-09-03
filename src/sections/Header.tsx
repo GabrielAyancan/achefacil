@@ -7,10 +7,10 @@ import { Link } from 'react-router-dom';
 
 export const Header = () => {
   return (
-    <header className="">
+    <header className="sticky backdrop-blur-sm top-0 z-40 bg-white">
       <div className="container ">
       <div className="flex items-center justify-between py-5 ">
-       <Image src={Logo1} alt="Logo" height={220} width={180} className="mt-4 p-2"/> 
+       <Image src={Logo1} alt="Logo" height={220} width={180} className="mt-4 p-2 "/> 
         <nav className="hidden md:flex gap-6  text-black/100 items-center text-xl">
               <a href="/" className="hover:text-[#1127FF] transition">Start</a>
               <a href="/features" className="hover:text-[#1127FF] transition">Features</a>

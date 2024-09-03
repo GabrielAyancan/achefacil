@@ -58,13 +58,12 @@ export const Plans = () => {
     return (
         <div className="">
             <h1 className="uppercase text-center text-purple-800 mt-28 tracking-[.25em]">Our offer</h1>
-            <p className="text-gray-900 text-4xl text-center font-bold p-8">Choose the best option</p>
+            <p className="text-gray-900 text-6xl text-center font-bold p-8">Choose the best option</p>
 
 
             <div className="flex flex-col gap-16 items-center mt-10 lg:flex-row  lg:justify-center">
                 {pricingTiers.map(({ title, mb, popular, inverse, features, teste,  monthlyPrice, buttonText }, key) => (
-                    <div key={key} className={twMerge("card card1", 'bg-white text-gray-900')}>
-
+                    <div className="card bg-white text-gray-900">
 
                         {/* TITULO E MB */}
                         <div className="flex justify-between">
@@ -100,7 +99,14 @@ export const Plans = () => {
                         <button className="w-full mt-[50px] text-[#1127FF]">{buttonText}</button>
                     </div>
                 ))}
+                
             </div>
+
+            {/* CARD 2 */}
+            
+
+            
+           
 
             
             <div className="mt-28">
@@ -117,13 +123,13 @@ export const Plans = () => {
                     </span>
             </div>  
                 <div>
-                        <div className="container">
-                        <h1 className="text-gray-900 text-2xl px-[130px] mt-36">Internet</h1>
+                        <div className="">
+                        <h1 className="text-gray-900 text-2xl px-[160px] mt-36"></h1>
                         </div>
                         
-                        <h2 className="text-gray-900 text-2xl -mt-8 px-[930px]">TV</h2>
+                        <h2 className="text-gray-900 text-2xl -mt-8 px-[530px]"></h2>
 
-                        <h3 className="text-gray-900 text-2xl -mt-8 px-[1280px]">Phone</h3>
+                        <h3 className="text-gray-900 text-2xl -mt-8 px-[890px]"></h3>
                 </div>
         
             <div className="text-center">

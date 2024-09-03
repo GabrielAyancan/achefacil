@@ -7,14 +7,6 @@ import { Component, useEffect, useState } from 'react';
    
 
 export const Pricing = () => {
-    // const [nm1 , setNm1] = useState(0)
-
-    // for(let i = 0; i < 500; i++){
-    //     setInterval(() => {
-    //         setNm1(nm1 + 1)       
-    //     }, 50);
-    // }
-
 
 
     return (
@@ -30,6 +22,7 @@ export const Pricing = () => {
                 <p className="text-white mt-10">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do <br />eiusmod tempor incididunt ut labore et dolore magna aliqua. <br /> Ut enim ad minim veniam, quis nostrud exercitation ullamco <br /> laboris nisi ut aliquip ex ea commodo.</p>
                 <h1 className="text-white/30 text-3xl py-6">___________________________________</h1>
                 <h2 className="text-[#B5E6FF] p-10 text-5xl font-bold px-2">250 Mb</h2>
+                
                 <p className="text-white -mt-4 text-xl">Nulla mauris dolor, gravida <br />a varius blandit.</p>
                 <div className="-left-[-270px] md:absolute -mt-[170px]">
                     <h3 className=" text-[#B5E6FF] py-11 text-5xl font-bold">500 Mb</h3>

@@ -6,7 +6,7 @@ import LinkedinIcon from '@/assets/icons/linkedin.png';
 
 export const Contact = () => {
     return (
-        <section className="container -mt-[-600px]">
+        <section className="container -mt-[-200px]">
             <div className="absolute mt-12">
                 <h1>Gabriel</h1>
                 <h2>Level 999</h2>

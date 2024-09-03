@@ -63,7 +63,7 @@ export const Features = () => {
             <div className="-right-[-450px] md:absolute mt-60">
                 <h1 className="text-gray-900 text-2xl ">Aaliquam volutpat</h1>
             </div>
-            <div className="-mt-20">
+            <div className="-mt-[-500px]">
             <Contact/>
             </div>
             <Footer />
