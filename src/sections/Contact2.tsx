@@ -4,7 +4,7 @@ import TwitterIcon from '@/assets/icons/twitter.png';
 import LinkedinIcon from '@/assets/icons/linkedin.png';
 
 
-export const Contact = () => {
+export const ContactForm = () => {
     return (
         <section className="container -mt-[-200px]">
             <div className="absolute mt-12">

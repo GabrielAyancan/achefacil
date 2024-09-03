@@ -4,7 +4,6 @@ import Image from "next/image";
 import { Pricing } from "@/sections/Pricing";
 import JobImage from '@/assets/images/aaaa-1.jpg';
 import { Questions } from "@/sections/Questions";
-import { Contact } from "@/sections/Contact2";
 import { Footer } from "@/sections/Footer";
 
 const Ouroffer = () => {
@@ -48,7 +47,6 @@ const Ouroffer = () => {
             </div>
 
             <Questions />
-            <Contact />
             <Footer />
 
         </section>

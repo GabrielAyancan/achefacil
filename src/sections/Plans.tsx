@@ -15,11 +15,12 @@ const pricingTiers = [
         features: [
             "Ut ultricies imperdiet sodales.",
             "Aliquam fringilla aliquam ex transcend.",
-            
+
         ],
         teste: [
             "Quantum diolor pertor"
-        ]
+        ],
+        isSelected: false
     },
     {
         title: "Fiber Pro",
@@ -35,6 +36,7 @@ const pricingTiers = [
         teste: [
             "Fusce lobortis porttitor"
         ],
+        isSelected: false
     },
     {
         title: "Fiber Max",
@@ -50,6 +52,7 @@ const pricingTiers = [
         teste: [
             "Fusce lobortis porttitor"
         ],
+        isSelected: true
     },
 ];
 
@@ -62,18 +65,18 @@ export const Plans = () => {
 
 
             <div className="flex flex-col gap-16 items-center mt-10 lg:flex-row  lg:justify-center">
-                {pricingTiers.map(({ title, mb, popular, inverse, features, teste,  monthlyPrice, buttonText }, key) => (
-                    <div className="card bg-white text-gray-900">
+                {pricingTiers.map(({ title, mb, popular, inverse, features, teste, monthlyPrice, buttonText, isSelected }, key) => (
+                    <div className={`card text-gray-900" ${isSelected ? 'bg-[#5d53e6]' : 'bg-white'}`} key={key}>
 
                         {/* TITULO E MB */}
                         <div className="flex justify-between">
-                            <h3 className="text-4xl font-bold text-black/50 text-blue-800">{title}</h3>
+                            <h3 className={`text-4xl font-bold text-black/50 ${isSelected ? 'text-white' : 'text-blue-800'} `}>{title}</h3>
                             <div className="inline-flex text-sm py-1.5 ">
                             </div>
                         </div>
                         <div className="mt-6">
-                        <span className="text-5xl font-bold tracking-wide mt-12 py-9">{mb} Mb</span>
-                        <div className="flex items-baseline mt-[240px]">
+                            <span className={`text-5xl font-bold tracking-wide mt-12 py-9 ${isSelected ? 'text-white' : 'text-black'}`}>{mb} Mb</span>
+                            <div className="flex items-baseline mt-[240px]">
                             </div>
                         </div>
 
@@ -93,50 +96,55 @@ export const Plans = () => {
                             ))}
                         </ul>
                         <div className="mt-8">
-                        <span className="text-4xl font-bold tracking-tighter py-2">${monthlyPrice}</span>
-                        <span className="text-4xl tracking-tight font-bold text-gray-900">/month</span>
+                            <span className="text-4xl font-bold tracking-tighter py-2">${monthlyPrice}</span>
+                            <span className="text-4xl tracking-tight font-bold text-gray-900">/month</span>
                         </div>
                         <button className="w-full mt-[50px] text-[#1127FF]">{buttonText}</button>
                     </div>
                 ))}
-                
+
             </div>
 
             {/* CARD 2 */}
-            
 
-            
-           
 
-            
+
+
+
+
             <div className="mt-28">
                 <h1 className="text-4xl font-bold text-center">For every bundle u can choose</h1>
-                    <span>
-                        <Image src={InternetIcon} alt="InternetIcon" height={100} width={100} className="flex flex-auto -left-[-550px] md:absolute mt-[70px]" />
+                <div className="flex flex-row justify-center items-center mt-16">
+                    <span className="flex flex-col justify-center items-center bg-[#e8e7fd] hover:bg-[#d6d4fe]' w-[300px] rounded-full p-6 px-16">
+                        <Image src={InternetIcon} alt="InternetIcon" height={39} width={57} />
+                        <h1 className="text-gray-900 text-2xl">INTERNET</h1>
                     </span>
-                    <span>
-                        <Image src={TvIcon} alt="TvIcon" height={100} width={100} className="flex flex-auto -left-[-900px] md:absolute mt-16" />
-                    </span>                
-                    <span >
-                        
-                        <Image src={Phone2Icon} alt="PhoneIcon" height={100} width={100} className="flex flex-auto -right-[-550px] md:absolute mt-16" />
+                    <span className="flex flex-col justify-center items-center bg-[#e8e7fd] w-[300px] rounded-full p-6 px-16 ml-6">
+                        <Image src={TvIcon} alt="TvIcon" height={39} width={57} />
+                        <h1 className="text-gray-900 text-2xl">TV</h1>
                     </span>
-            </div>  
-                <div>
-                        <div className="">
-                        <h1 className="text-gray-900 text-2xl px-[160px] mt-36"></h1>
-                        </div>
-                        
-                        <h2 className="text-gray-900 text-2xl -mt-8 px-[530px]"></h2>
-
-                        <h3 className="text-gray-900 text-2xl -mt-8 px-[890px]"></h3>
+                    <span className="flex flex-col justify-center items-center bg-[#e8e7fd] w-[300px] rounded-full p-6 px-16 ml-6">
+                        <Image src={Phone2Icon} alt="PhoneIcon"height={39} width={57}/>
+                        <h1 className="text-gray-900 text-2xl">Phone</h1>
+                    </span>
                 </div>
-        
+
+            </div>
+            <div>
+                <div className="">
+
+                </div>
+
+                
+
+                <h3 className="text-gray-900 text-2xl -mt-8 px-[890px]"></h3>
+            </div>
+
             <div className="text-center">
-            <button className=" bg-blue-800 mt-20 px-12 py-3 rounded-full">
-                <span className="text-[#B5E6FF]">Contact us</span>
-            </button>
-        </div>
+                <button className=" bg-blue-800 mt-20 px-12 py-3 rounded-full">
+                    <span className="text-[#B5E6FF]">Contact us</span>
+                </button>
+            </div>
         </div>
 
 
